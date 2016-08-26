@@ -15,6 +15,9 @@
 		844EDE681D7033E30066F642 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 844EDE661D7033E30066F642 /* LaunchScreen.storyboard */; };
 		844EDE731D7033E30066F642 /* CoreDataH1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDE721D7033E30066F642 /* CoreDataH1Tests.swift */; };
 		844EDE7E1D7033E30066F642 /* CoreDataH1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDE7D1D7033E30066F642 /* CoreDataH1UITests.swift */; };
+		844EDE8C1D70432A0066F642 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDE8B1D70432A0066F642 /* Page2ViewController.swift */; };
+		844EDE8E1D7043460066F642 /* Page1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDE8D1D7043460066F642 /* Page1ViewController.swift */; };
+		844EDE901D7049FB0066F642 /* GeneralClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844EDE8F1D7049FB0066F642 /* GeneralClass.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		844EDE791D7033E30066F642 /* CoreDataH1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreDataH1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		844EDE7D1D7033E30066F642 /* CoreDataH1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataH1UITests.swift; sourceTree = "<group>"; };
 		844EDE7F1D7033E30066F642 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		844EDE8B1D70432A0066F642 /* Page2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
+		844EDE8D1D7043460066F642 /* Page1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Page1ViewController.swift; sourceTree = "<group>"; };
+		844EDE8F1D7049FB0066F642 /* GeneralClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeneralClass.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,9 @@
 			children = (
 				844EDE5A1D7033E30066F642 /* AppDelegate.swift */,
 				844EDE5C1D7033E30066F642 /* ViewController.swift */,
+				844EDE8D1D7043460066F642 /* Page1ViewController.swift */,
+				844EDE8B1D70432A0066F642 /* Page2ViewController.swift */,
+				844EDE8F1D7049FB0066F642 /* GeneralClass.swift */,
 				844EDE5E1D7033E30066F642 /* Main.storyboard */,
 				844EDE641D7033E30066F642 /* Assets.xcassets */,
 				844EDE661D7033E30066F642 /* LaunchScreen.storyboard */,
@@ -196,7 +205,7 @@
 				TargetAttributes = {
 					844EDE561D7033E30066F642 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = Z32K7UXVG2;
+						DevelopmentTeam = W6X8G863UY;
 					};
 					844EDE6D1D7033E30066F642 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -263,7 +272,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				844EDE5D1D7033E30066F642 /* ViewController.swift in Sources */,
+				844EDE901D7049FB0066F642 /* GeneralClass.swift in Sources */,
+				844EDE8E1D7043460066F642 /* Page1ViewController.swift in Sources */,
 				844EDE5B1D7033E30066F642 /* AppDelegate.swift in Sources */,
+				844EDE8C1D70432A0066F642 /* Page2ViewController.swift in Sources */,
 				844EDE631D7033E30066F642 /* CoreDataH1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -406,10 +418,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CoreDataH1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.all2sale.CoreDataH1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -417,10 +432,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = CoreDataH1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.all2sale.CoreDataH1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};

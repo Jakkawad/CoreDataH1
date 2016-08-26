@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  Page1ViewController.swift
 //  CoreDataH1
 //
 //  Created by admin on 8/26/2559 BE.
@@ -9,8 +9,8 @@
 import UIKit
 import CoreData
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+class Page1ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
     var items = [NSManagedObject]()
     
     @IBOutlet weak var tableView:UITableView!
@@ -40,17 +40,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     }
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        //return items.count
+        return 5
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell0 = tableView.dequeueReusableCellWithIdentifier("tableCell0")
-        let item = items[indexPath.row]
-        cell0?.textLabel?.text = item.valueForKey("name") as? String
+        //let item = items[indexPath.row]
+        //cell0?.textLabel?.text = item.valueForKey("name") as? String
         return cell0!
     }
     
     override func viewWillAppear(animated: Bool) {
+        self.tableView.reloadData()
+        print("ViewWillAppear")
+        /*
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         let managedContext = appDelegate.managedObjectContext
         let fetchRequest = NSFetchRequest(entityName: "Item")
@@ -59,18 +63,19 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
         }
+        */
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 
